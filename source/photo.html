@@ -8,7 +8,7 @@
 
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html">
       <img src="https://via.placeholder.com/101x74" width="101" height="74" alt="Логотип">
     </a>
     <nav class="main-nav">
@@ -50,7 +50,7 @@
       <p class="page-main__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике
         и экономике.</p>
     </section>
-    <section class="page-main__photo photo">
+    <section class="photo">
       <ul class="photo__list">
         <li class="photo__item">
           <img src="https://via.placeholder.com/280x280" alt="Неродные просторы" width="280" height="280">
@@ -78,10 +78,15 @@
         </li>
       </ul>
     </section>
-    <section class="page-main__video video">
+    <section class="video">
       <h2 class="video__title">Вы еще сомневаетесь?</h2>
       <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <video src="" width="320" height="201" controls="controls" poster="https://via.placeholder.com/320x201"></video>
+      <img src="https://via.placeholder.com/320x201" width="320" height="201" alt="Видео">
+      <input type="range" class="video__range">
+      <button class="video__play" type="button"></button>
+      <button class="video__replay" type="button"></button>
+      <button class="video__subtitles" type="button"></button>
+      <button class="video__fullscreen" type="button"></button>
     </section>
   </main>
   <footer class="page-footer">
@@ -104,7 +109,7 @@
     </ul>
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано:</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
     </div>
   </footer>
 </body>
