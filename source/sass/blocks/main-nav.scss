@@ -1,0 +1,15 @@
+.main-nav__list {
+  list-style: none;
+  background-color: #81b3d2;
+}
+
+.main-nav__item,
+.main-nav__link {
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  text-decoration: none;
+}
