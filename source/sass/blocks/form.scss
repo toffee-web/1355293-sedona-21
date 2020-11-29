@@ -1,0 +1,67 @@
+.form__fieldset {
+  border: 0 none;
+}
+
+.form__legend {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__list {
+  padding: 0;
+  list-style: none;
+}
+
+.form__label {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.form__input {
+  background-color: #f2f2f2;
+  border: none;
+  color: black;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form__radio-label,
+.form__checkbox-label {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form__textarea {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: black;
+  background-color: #f2f2f2;
+}
+
+.form__btn {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #81b3d2;
+  padding-top: 18.5px;
+  padding-right: 33px;
+  padding-bottom: 13.5px;
+  padding-left: 32px;
+  border: none;
+}
