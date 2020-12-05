@@ -8,6 +8,29 @@
     background-color: #81b3d2;
     color: white;
   }
+
+  @media (min-width: $tablet-width) {
+    &--direct-order {
+      display: grid;
+      grid-template-areas:
+      "title img"
+      "num ."
+      "text .";
+    }
+
+    &--reverse-order {
+      display: grid;
+      grid-template-areas:
+      "img title"
+      ". num"
+      ". text";
+    }
+
+    &--location {
+      display: inline-block;
+      width: 30%;
+    }
+  }
 }
 
 .advantage__title {
@@ -15,8 +38,15 @@
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
+  grid-area: title;
+  grid-row-start: 1;
+  grid-row-end: 3;
 
   &--center {
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
     text-align: center;
   }
 }
@@ -26,6 +56,7 @@
   font-size: 14px;
   line-height: 21px;
   text-align: center;
+  grid-area: num;
 
   &::before {
     content: "\2013";
@@ -38,6 +69,14 @@
 
 .advantage__list-pluses {
   list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .advantage__description {
@@ -53,4 +92,10 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
+  grid-area: text;
+}
+
+.advantage__img {
+  grid-row-start: 1;
+  grid-row-end: 4;
 }
