@@ -13,17 +13,17 @@
     &--direct-order {
       display: grid;
       grid-template-areas:
-      "title img"
-      "num ."
-      "text .";
+        "title img"
+        "num ."
+        "text .";
     }
 
     &--reverse-order {
       display: grid;
       grid-template-areas:
-      "img title"
-      ". num"
-      ". text";
+        "img title"
+        ". num"
+        ". text";
     }
 
     &--location {
