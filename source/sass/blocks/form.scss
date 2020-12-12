@@ -1,5 +1,47 @@
+.form__location {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}
+
 .form__fieldset {
   border: 0 none;
+
+  &--border-top {
+    @media (min-width: $tablet-width) {
+      border-top: 1px solid #dbdbdb;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 120px;
+      padding-left: 120px;
+    }
+  }
+
+  &--group-name {
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
+  }
+
+  &--group-input {
+    @media (min-width: $tablet-width) {
+      order: 2;
+      flex-grow: 1;
+    }
+  }
+
+  &--group-radio {
+    @media (min-width: $tablet-width) {
+      order: 0;
+    }
+  }
 }
 
 .form__legend {
@@ -14,6 +56,45 @@
 .form__list {
   padding: 0;
   list-style: none;
+
+  &--checkbox-position {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-around;
+      padding-left: 160px;
+      padding-right: 124px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  &--contact {
+    @media (min-width: $tablet-width) {
+      padding-right: 60px;
+      padding-left: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+.form__item {
+  &--loyout {
+    @media (min-width: $desktop-width) {
+      display: inline-flex;
+    }
+  }
+
+  &--loyout:first-child {
+    margin-right: 79px;
+  }
 }
 
 .form__label {
@@ -32,6 +113,12 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+
+  &--contact {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
 }
 
 .form__radio-label,
@@ -49,6 +136,8 @@
   line-height: 26px;
   color: black;
   background-color: #f2f2f2;
+  width: 100%;
+  border: none;
 }
 
 .form__btn {
@@ -64,4 +153,37 @@
   padding-bottom: 13.5px;
   padding-left: 32px;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 132px;
+    padding-left: 133px;
+  }
+}
+
+.form__button {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}
+
+.form__desc {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+  }
 }

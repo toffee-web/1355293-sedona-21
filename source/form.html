@@ -8,7 +8,7 @@
   <title>HTML Academy: Седона</title>
 </head>
 
-<body>
+<body class="page-body container">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <img src="https://via.placeholder.com/101x74" width="101" height="74" alt="Логотип">
@@ -53,63 +53,65 @@
         вами достопримечательностях</p>
     </section>
     <form class="form form__group" action="https://echo.htmlacademy.ru" method="POST">
-      <fieldset class="form__fieldset">
-        <legend class="form__legend">Представьтесь:</legend>
-        <ul class="form__list">
-          <li class="form__item">
-            <label class="form__label" for="surname">Имя<sup>*</sup>:</label>
-            <input class="form__input" type="text" name="surname" id="surname" required>
-          </li>
-          <li class="form__item">
-            <label class="form__label" for="name">Фамилия<sup>*</sup>:</label>
-            <input class="form__input" type="text" name="name" id="name" required>
-          </li>
-          <li class="form__item">
-            <label class="form__label" for="middleName">Отчество:</label>
-            <input class="form__input" type="text" name="middleName" id="middleName">
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form__fieldset">
-        <legend class="form__legend">Контактная информация:</legend>
-        <ul class="form__list">
-          <li class="form__item">
-            <label class="form__label form__label--contact" for="phone">Контактный телефон<sup>*</sup>:</label>
-            <input class="form__input form__input--contact" type="tel" name="tel" id="phone"
-              placeholder="Введите телефон" required>
-            <span class="form__icon-bg form__icon-bg--phone"></span>
-          </li>
-          <li class="form__item">
-            <label class="form__label form__label--contact" for="email">Электронная почта<sup>*</sup>:</label>
-            <input class="form__input form__input--contact" type="email" name="email" id="email"
-              placeholder="Введите e-mail" required>
-            <span class="form__icon-bg form__icon-bg--email"></span>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form__fieldset">
-        <legend class="form__legend">Ваше общее впечатление:</legend>
-        <ul class="form__list">
-          <li class="form__list-item form__list-item--radio">
-            <input class="form__radio-input" type="radio" id="impression" name="impression" value="Скорее положительное"
-              checked>
-            <label class="form__radio-label" for="impression">Скорее положительное</label>
-          </li>
-          <li class="form__list-item form__list-item--radio">
-            <input class="form__radio-input" type="radio" id="impression1" name="impression"
-              value="Скорее отрицательное">
-            <label class="form__radio-label" for="impression1">Скорее отрицательное</label>
-          </li>
-          <li class="form__list-item form__list-item--radio">
-            <input class="form__radio-input" type="radio" id="impression2" name="impression"
-              value="Затрудняюсь ответить">
-            <label class="form__radio-label" for="impression2">Затрудняюсь ответить</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form__fieldset">
+      <div class="form__location">
+        <fieldset class="form__fieldset form__fieldset--group-name">
+          <legend class="form__legend">Представьтесь:</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label" for="surname">Имя<sup>*</sup>:</label>
+              <input class="form__input" type="text" name="surname" id="surname" required>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="name">Фамилия<sup>*</sup>:</label>
+              <input class="form__input" type="text" name="name" id="name" required>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="middleName">Отчество:</label>
+              <input class="form__input" type="text" name="middleName" id="middleName">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--group-input form__fieldset--border-top">
+          <legend class="form__legend">Контактная информация:</legend>
+          <ul class="form__list form__list--contact">
+            <li class="form__item form__item--loyout">
+              <label class="form__label form__label--contact" for="phone">Контактный телефон<sup>*</sup>:</label>
+              <input class="form__input form__input--contact" type="tel" name="tel" id="phone"
+                placeholder="Введите телефон" required>
+              <span class="form__icon-bg form__icon-bg--phone"></span>
+            </li>
+            <li class="form__item form__item--loyout">
+              <label class="form__label form__label--contact" for="email">Электронная почта<sup>*</sup>:</label>
+              <input class="form__input form__input--contact" type="email" name="email" id="email"
+                placeholder="Введите e-mail" required>
+              <span class="form__icon-bg form__icon-bg--email"></span>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--group-radio">
+          <legend class="form__legend">Ваше общее впечатление:</legend>
+          <ul class="form__list">
+            <li class="form__list-item form__list-item--radio">
+              <input class="form__radio-input" type="radio" id="impression" name="impression"
+                value="Скорее положительное" checked>
+              <label class="form__radio-label" for="impression">Скорее положительное</label>
+            </li>
+            <li class="form__list-item form__list-item--radio">
+              <input class="form__radio-input" type="radio" id="impression1" name="impression"
+                value="Скорее отрицательное">
+              <label class="form__radio-label" for="impression1">Скорее отрицательное</label>
+            </li>
+            <li class="form__list-item form__list-item--radio">
+              <input class="form__radio-input" type="radio" id="impression2" name="impression"
+                value="Затрудняюсь ответить">
+              <label class="form__radio-label" for="impression2">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <fieldset class="form__fieldset form__fieldset--border-top">
         <legend class="form__legend">Посещенные достопримечательности:</legend>
-        <ul class="form__list">
+        <ul class="form__list form__list--checkbox-position">
           <li class="form__list-item">
             <input class="form__checkbox-input" type="checkbox" id="attractions" name="attractions" value="Мост дьявола"
               checked>
@@ -140,13 +142,16 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--border-top">
         <legend class="form__legend" for="emotion">Опишите свои эмоции</legend>
         <textarea class="form__textarea" name="emotion" id="emotion" cols="30" rows="10"
           placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
       <div class="form__button">
         <button class="form__btn" src="https://echo.htmlacademy.ru" type="submit">Отправить отзыв</button>
+        <div class="form__desc">
+          <span>*</span> - обязательные поля
+        </div>
       </div>
     </form>
   </main>
@@ -157,20 +162,28 @@
     <ul class="page-footer__social">
       <li class="page-footer__social-item">
         <a class="page-footer__social-link page-footer__social-link--twitter" href="https://twitter.com/htmlacademy_ru"
-          target="_blank">Twitter</a>
+          target="_blank">
+          <img src="https://via.placeholder.com/46x48" width="46" height="48" alt="Twitter">
+        </a>
       </li>
       <li class="page-footer__social-item">
         <a class="page-footer__social-link page-footer__social-link--facebook"
-          href="https://www.facebook.com/htmlacademy" target="_blank">Фейсбук</a>
+          href="https://www.facebook.com/htmlacademy" target="_blank">
+          <img src="https://via.placeholder.com/46x48" width="46" height="48" alt="facebook">
+        </a>
       </li>
       <li class="page-footer__social-item">
         <a class="page-footer__social-link page-footer__social-link--youtube"
-          href="https://www.youtube.com/user/htmlacademyru" target="_blank">YouTube</a>
+          href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+          <img src="https://via.placeholder.com/46x48" width="46" height="48" alt="YouTube">
+        </a>
       </li>
     </ul>
     <div class="page-footer__copyright">
       <p class="page-footer__copyright-text">Разработано</p>
-      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="https://via.placeholder.com/26.9x34.1" width="27" height="34" alt="htmlacademy">
+      </a>
     </div>
   </footer>
 </body>
