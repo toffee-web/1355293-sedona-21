@@ -35,3 +35,15 @@
   padding-top: 77px;
   padding-bottom: 91px;
 }
+
+.page-header__img-size {
+  width: 229px;
+
+  @media (min-width: $tablet-width) {
+    width: 457px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 460px;
+  }
+}
