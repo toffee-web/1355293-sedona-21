@@ -32,11 +32,31 @@
 
 .page-footer__social-link {
   text-decoration: none;
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+
+  &--twitter {
+    padding-top: 16px;
+    padding-left: 14px;
+  }
+
+  &--facebook {
+    padding-top: 13px;
+    padding-left: 19px;
+  }
+
+  &--youtube {
+    padding-top: 17px;
+    padding-left: 13px;
+  }
 }
 
 .page-footer__copyright {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .page-footer__copyright-text {
@@ -46,4 +66,10 @@
   line-height: 26px;
   text-align: center;
   padding-right: 10px;
+}
+
+.page-footer__copyright-img {
+  fill: black;
+  width: 27px;
+  height: 34px;
 }

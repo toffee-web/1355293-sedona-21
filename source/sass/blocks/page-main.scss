@@ -1,3 +1,17 @@
+.page-main__header {
+  @media (min-width: $tablet-width) {
+    padding-right: 124px;
+    padding-left: 124px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 345px;
+    padding-left: 345px;
+    margin-bottom: 41px;
+  }
+}
+
 .page-main__title {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
