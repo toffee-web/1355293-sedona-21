@@ -201,7 +201,8 @@
   grid-area: text;
 }
 
-/*.advantage__img {
-  grid-row-start: 1;
-  grid-row-end: 4;
-}*/
+.advantage__img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}

@@ -33,6 +33,7 @@
   background-color: #bbdefb;
   background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
+  background-position-y: center;
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/back-tablet.jpg");
