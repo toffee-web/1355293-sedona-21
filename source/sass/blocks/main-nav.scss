@@ -1,3 +1,8 @@
+.main-nav__wrapper {
+  position: relative;
+  z-index: 9999;
+}
+
 .main-nav__list {
   list-style: none;
   background-color: #81b3d2;
@@ -30,10 +35,26 @@
 
   &:not(:last-child) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-bottom: none;
+    }
   }
 
   &:not(:first-child) {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    @media (min-width: $tablet-width) {
+      border-top: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-top: none;
+    }
   }
 
   &:hover {
@@ -109,6 +130,7 @@
   left: 278px;
   top: 17px;
   border: none;
+  z-index: 10000;
 
   @media (min-width: $tablet-width) {
     display: none;

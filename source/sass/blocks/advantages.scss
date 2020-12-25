@@ -1,6 +1,12 @@
 .advantage {
+  margin-bottom: 35px;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 58px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 135px;
   }
 }
 
@@ -13,6 +19,54 @@
   &--color {
     background-color: #81b3d2;
     color: white;
+  }
+
+  &--location {
+    background-color: #eeeeee;
+    display: inline-block;
+    padding-top: 25px;
+
+    &:not(:last-child)::after {
+      content: url("../img/line.svg");
+      padding: 0 20px;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+  }
+
+  &--first {
+    padding-top: 50px;
+    margin-bottom: 18px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+    }
+  }
+
+  &--second {
+    padding-top: 39px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+    }
+  }
+
+  &--four {
+    padding-top: 23px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+    }
+  }
+
+  &--five {
+    padding-top: 23px;
+
+    @media (min-width: $tablet-width) {
+      /*padding-top: 0;*/
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -40,6 +94,12 @@
     &--location {
       display: inline-block;
       width: 30%;
+
+      @media (min-width: $tablet-width) {
+        /*padding-top: 0;*/
+        width: 33.3%;
+        margin-right: -4px;
+      }
     }
   }
 }
@@ -52,11 +112,15 @@
     padding-left: 36px;
   }
 
+  &--housing {
+    padding-bottom: 9px;
+  }
+
   &--housing::before {
     content: url("../../img/icon-house-mobile.svg.svg");
     position: absolute;
     left: 21px;
-    top: 26px;
+    top: 6px;
     width: 39px;
     height: 37px;
 
@@ -64,24 +128,32 @@
       content: url("../../img/icon-house-tablet.svg.svg");
       position: absolute;
       left: 90px;
-      top: -90px;
+      top: -99px;
       width: 75px;
       height: 72px;
     }
 
     @media (min-width: $desktop-width) {
       left: 161px;
-      top: -90px;
+      top: -100px;
       width: 75px;
       height: 72px;
+    }
+  }
+
+  &--souvenirs {
+    padding-bottom: 8px;
+
+    @media (min-width: $tablet-width) {
+      order: 1;
     }
   }
 
   &--souvenirs::before {
     content: url("../../img/icon-gift-mobile.svg.svg");
     position: absolute;
-    left: 21px;
-    top: 26px;
+    left: 25px;
+    top: 5px;
     width: 32px;
     height: 38px;
 
@@ -89,15 +161,14 @@
       content: url("../../img/icon-gift-tablet.svg.svg");
       position: absolute;
       left: 90px;
-      top: -90px;
+      top: -101px;
       width: 64px;
       height: 75px;
-      order: 1;
     }
 
     @media (min-width: $desktop-width) {
-      left: 161px;
-      top: -90px;
+      left: 152px;
+      top: -104px;
       width: 75px;
       height: 72px;
     }
@@ -106,8 +177,8 @@
   &--meal::before {
     content: url("../../img/icon-burger-mobile.svg.svg");
     position: absolute;
-    left: 21px;
-    top: 26px;
+    left: 18px;
+    top: 11px;
     width: 40px;
     height: 35px;
 
@@ -115,14 +186,14 @@
       content: url("../../img/icon-burger-tablet.svg.svg");
       position: absolute;
       left: 90px;
-      top: -90px;
+      top: -95px;
       width: 76px;
       height: 68px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 161px;
-      top: -90px;
+      left: 160px;
+      top: -96px;
       width: 75px;
       height: 72px;
     }
@@ -140,14 +211,46 @@
 
   &--center {
     text-align: center;
+    padding-bottom: 13px;
+    margin: 0;
   }
 
   @media (min-width: $tablet-width) {
     text-align: center;
     padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 21px;
 
     &--pluse {
       padding-top: 0;
+
+      @media (min-width: $tablet-width) {
+        margin: 0;
+        padding-left: 0;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-right: 40px;
+    padding-left: 0;
+    padding-bottom: 5px;
+  }
+
+  &--second {
+    @media (min-width: $tablet-width) {
+      padding-right: 53px;
+      padding-left: 53px;
+      padding-top: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 125px;
+      padding-left: 125px;
+      padding-top: 49px;
     }
   }
 }
@@ -158,13 +261,31 @@
   line-height: 21px;
   text-align: center;
   grid-area: num;
+  padding-bottom: 18px;
+  margin: 0;
 
   &::before {
-    content: "\2013";
+    content: "\2014";
   }
 
   &::after {
-    content: "\2013";
+    content: "\2014";
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 13px;
+  }
+
+  &--second {
+    padding-top: 16px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 23px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 19px;
   }
 }
 
@@ -173,11 +294,19 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  margin-bottom: 36px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 59px;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 74px;
   }
 }
 
@@ -186,6 +315,7 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -199,6 +329,69 @@
   text-transform: uppercase;
   text-align: center;
   grid-area: text;
+  margin: 0;
+
+  &--indent-first {
+    padding-right: 12px;
+    padding-left: 13px;
+    padding-bottom: 39px;
+    /*margin: 0;*/
+
+    @media (min-width: $tablet-width) {
+      padding-top: 18px;
+      padding-right: 26px;
+      padding-left: 26px;
+      /*padding-top: 18px;*/
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 22px;
+      padding-right: 55px;
+      padding-left: 55px;
+      /*padding-top: 18px;*/
+    }
+  }
+
+  &--indent-second {
+    padding-right: 16px;
+    padding-left: 15px;
+    padding-bottom: 35px;
+    /*margin: 0;*/
+
+    @media (min-width: $tablet-width) {
+      padding-top: 19px;
+      padding-right: 33px;
+      padding-left: 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 27px;
+      padding-right: 85px;
+      padding-left: 85px;
+    }
+  }
+
+  &--indent {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 11px;
+  }
+
+  &--indent-four {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 0;
+    /*margin: 0;*/
+    padding-bottom: 10px;
+  }
+
+  &--indent-five {
+    padding-right: 36px;
+    padding-left: 36px;
+    /*margin: 0;*/
+    padding-bottom: 22px;
+  }
 }
 
 .advantage__img {

@@ -1,14 +1,18 @@
 .page-main__header {
+  padding-left: 17px;
+  padding-right: 18px;
+  margin-bottom: 33px;
+
   @media (min-width: $tablet-width) {
     padding-right: 124px;
     padding-left: 124px;
-    margin-bottom: 52px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 345px;
     padding-left: 345px;
-    margin-bottom: 41px;
+    margin-bottom: 43px;
   }
 }
 
@@ -20,6 +24,14 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .page-main__text {
@@ -30,4 +42,5 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
 }
