@@ -11,4 +11,9 @@
   padding-right: 47px;
   padding-bottom: 17.5px;
   padding-left: 47px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 121px;
+    padding-left: 121px;
+  }
 }
