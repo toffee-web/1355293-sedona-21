@@ -3,6 +3,15 @@
   padding-right: 18px;
   margin-bottom: 33px;
 
+  &--line {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 16px;
+  }
+
+  &--indent {
+    margin-bottom: 11px;
+  }
+
   @media (min-width: $tablet-width) {
     padding-right: 124px;
     padding-left: 124px;

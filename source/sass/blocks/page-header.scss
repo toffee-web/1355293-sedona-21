@@ -28,7 +28,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
+    width: 187px;
+    height: 97px;
     display: block;
   }
 }
@@ -72,6 +73,11 @@
     width: 461px;
     height: auto;
     padding-top: 103px;
+  }
+
+  &--indent {
+    padding-top: 25px;
+    padding-bottom: 99px;
   }
 }
 
