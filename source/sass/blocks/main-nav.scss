@@ -18,6 +18,13 @@
     background-color: white;
     height: 56px;
     align-items: center;
+    padding-left: 48px;
+    padding-right: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 90px;
+    padding-right: 71px;
   }
 }
 
@@ -32,6 +39,32 @@
   text-decoration: none;
   padding-top: 10px;
   padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+
+    &:nth-child(3) {
+      margin-left: auto;
+    }
+
+    &:first-child {
+      padding-right: 77px;
+    }
+
+    &:last-child {
+      padding-left: 52px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:first-child {
+      padding-right: 162px;
+    }
+
+    &:last-child {
+      padding-left: 138px;
+    }
+  }
 
   &:not(:last-child) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -125,12 +158,23 @@
 .main-nav__toggle {
   position: absolute;
   cursor: pointer;
-  width: 22px;
+  width: 23px;
   height: 22px;
   left: 278px;
   top: 17px;
   border: none;
   z-index: 10000;
+  outline: none;
+  background: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -146,7 +190,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 30px;
+  width: 23px;
   height: 4px;
   background-color: #81b3d2;
   box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
@@ -159,18 +203,23 @@
     0 16px 0 0 fade(#ffffff, 30%);
 }
 
+.main-nav--closed .main-nav__item {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
 .main-nav--opened .main-nav__toggle {
-  top: 0;
   right: auto;
-  left: 238px;
+
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 7px;
+    top: 9px;
     left: -3px;
-    width: 22px;
+    width: 28px;
     height: 3px;
     background-color: #ffffff;
   }
@@ -190,12 +239,6 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .main-nav--closed .site-list__item {
-    display: none;
-  }
-
-  .main-nav--closed .user-list__item {
-    display: none;
-  }
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }

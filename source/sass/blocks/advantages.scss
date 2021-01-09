@@ -13,6 +13,17 @@
 .advantage__list {
   list-style: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas:
+      "one . ."
+      "two . ."
+      "three . ."
+      "four five six";
+    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .advantage__item {
@@ -65,7 +76,7 @@
     padding-top: 23px;
 
     @media (min-width: $tablet-width) {
-      /*padding-top: 0;*/
+      padding-top: 0;
     }
   }
 
@@ -92,14 +103,48 @@
     }
 
     &--location {
-      display: inline-block;
-      width: 30%;
+      /*display: inline-block;
+      width: 30%;*/
 
       @media (min-width: $tablet-width) {
         /*padding-top: 0;*/
-        width: 33.3%;
-        margin-right: -4px;
+        /*width: 33.3%;
+        margin-right: -4px;*/
       }
+    }
+  }
+
+  &--area-one {
+    @media (min-width: $tablet-width) {
+      grid-area: one;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+  }
+
+  &--area-two {
+    @media (min-width: $tablet-width) {
+      grid-area: two;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+  }
+
+  &--area-three {
+    @media (min-width: $tablet-width) {
+      grid-area: three;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+  }
+
+  &--area-four {
+    @media (min-width: $tablet-width) {
+      grid-area: four;
+      grid-column-start: 1;
+      grid-column-end: 1;
+      padding-top: 0;
+      padding-bottom: 63px;
     }
   }
 }
@@ -209,17 +254,11 @@
   grid-row-start: 1;
   grid-row-end: 3;
 
-  &--center {
-    text-align: center;
-    padding-bottom: 13px;
-    margin: 0;
-  }
-
   @media (min-width: $tablet-width) {
     text-align: center;
     padding-top: 40px;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 60px;
+    padding-left: 60px;
     font-size: 21px;
 
     &--pluse {
@@ -251,6 +290,18 @@
       padding-right: 125px;
       padding-left: 125px;
       padding-top: 49px;
+    }
+  }
+
+  &--center {
+    text-align: center;
+    padding-bottom: 13px;
+    margin: 0;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 45px;
+      padding-left: 125px;
+      padding-right: 125px;
     }
   }
 }
@@ -384,6 +435,16 @@
     padding-top: 0;
     /*margin: 0;*/
     padding-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 55px;
+      padding-left: 55px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 70px;
+      padding-left: 70px;
+    }
   }
 
   &--indent-five {
@@ -391,6 +452,11 @@
     padding-left: 36px;
     /*margin: 0;*/
     padding-bottom: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 45px;
+    padding-left: 45px;
   }
 }
 

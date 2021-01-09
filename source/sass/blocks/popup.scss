@@ -1,0 +1,130 @@
+.popup {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  display: none;
+}
+
+.popup-error {
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+  }
+}
+
+.popup-success {
+  width: 320px;
+  /*padding-right: 40px;
+  padding-left: 40px;*/
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+  }
+}
+
+.popup__title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  color: black;
+
+  &--error {
+    padding-top: 40px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 50px;
+    }
+  }
+
+  &--success {
+    padding-top: 38px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 54px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.popup__text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+
+  &--error {
+    padding-right: 42px;
+    padding-left: 41px;
+    padding-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 47px;
+      padding-left: 46px;
+      padding-bottom: 25px;
+    }
+  }
+
+  &--success {
+    padding-right: 39px;
+    padding-left: 37px;
+    padding-bottom: 29px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 99px;
+      padding-left: 97px;
+      padding-bottom: 31px;
+    }
+  }
+}
+
+.popup__button {
+  background-color: #81b3d2;
+  border: none;
+  height: 58px;
+  color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  &--error {
+    width: 180px;
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 49px;
+    }
+  }
+
+  &--success {
+    width: 280px;
+
+    @media (min-width: $tablet-width) {
+      width: 458px;
+    }
+  }
+}
+
+.popup__bg {
+  background-color: #f2f2f2;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 44px;
+    padding-right: 91px;
+    padding-bottom: 44px;
+    padding-left: 91px;
+  }
+}
