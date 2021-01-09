@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="page-header container">
+  <header class="page-header page-header__form container">
     <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -84,55 +84,55 @@
   <main class="page-main container">
     <h1 class="visually-hidden">Форма отзыва</h1>
     <section class="page-main__header page-main__header--line page-main__header--indent">
-      <h2 class="page-main__title">Оставьте свой отзыв</h2>
-      <p class="page-main__text">Помогите нашим отелям стать лучше! Оставьте свой отзыв о них, а так же о посещенных
+      <h2 class="page-main__title page-main__title--form">Оставьте свой отзыв</h2>
+      <p class="page-main__text page-main__text--form">Помогите нашим отелям стать лучше! Оставьте свой отзыв о них, а так же о посещенных
         вами достопримечательностях</p>
     </section>
     <form class="form form__group" action="https://echo.htmlacademy.ru" method="POST">
       <div class="form__location">
         <fieldset class="form__fieldset form__fieldset--group-name">
-          <legend class="form__legend">Представьтесь:</legend>
+          <legend class="form__legend form__legend--name">Представьтесь:</legend>
           <ul class="form__list">
             <li class="form__item form__item--input">
-              <label class="form__label" for="surname">Имя<sup>*</sup>:</label>
-              <input class="form__input form__placeholder-color" type="text" name="surname" id="surname" placeholder="Петр" required>
+              <label class="form__label form__label--surname" for="surname">Имя<sup>*</sup>:</label>
+              <input class="form__input form__input--surname form__placeholder-color" type="text" name="surname" id="surname" placeholder="Петр" required>
             </li>
             <li class="form__item form__item--input">
-              <label class="form__label" for="name">Фамилия<sup>*</sup>:</label>
-              <input class="form__input form__placeholder-color" type="text" name="name" id="name" placeholder="Иванов" required>
+              <label class="form__label form__label--name" for="name">Фамилия<sup>*</sup>:</label>
+              <input class="form__input form__input--name form__placeholder-color" type="text" name="name" id="name" placeholder="Иванов" required>
             </li>
             <li class="form__item form__item--input">
-              <label class="form__label" for="middleName">Отчество:</label>
-              <input class="form__input form__placeholder-color" type="text" name="middleName" id="middleName" placeholder="Александрович">
+              <label class="form__label form__label--middlename" for="middleName">Отчество:</label>
+              <input class="form__input form__input--middlename form__placeholder-color" type="text" name="middleName" id="middleName" placeholder="Александрович">
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--group-input form__fieldset--border-top">
-          <legend class="form__legend">Контактная информация:</legend>
+          <legend class="form__legend form__legend--contact">Контактная информация:</legend>
           <ul class="form__list form__list--contact">
             <li class="form__item form__item--loyout">
-              <label class="form__label form__label--contact " for="phone">Контактный телефон<sup>*</sup>:</label>
-              <input class="form__input form__input--contact form__placeholder-color" type="tel" name="tel" id="phone"
+              <label class="form__label form__label--contact form__label--phone" for="phone"><span class="form__label-hidden">Контактный</span> телефон<sup>*</sup>:</label>
+              <input class="form__input form__input--contact form__placeholder-color form__input--phone" type="tel" name="tel" id="phone"
                 placeholder="Введите телефон" required>
               <span class="form__icon-bg form__icon-bg--phone"></span>
             </li>
             <li class="form__item form__item--loyout">
-              <label class="form__label form__label--contact" for="email">Электронная почта<sup>*</sup>:</label>
-              <input class="form__input form__input--contact form__placeholder-color" type="email" name="email" id="email"
+              <label class="form__label form__label--contact form__label--email" for="email">Электронная почта<sup>*</sup>:</label>
+              <input class="form__input form__input--contact form__placeholder-color form__input--email" type="email" name="email" id="email"
                 placeholder="Введите e-mail" required>
               <span class="form__icon-bg form__icon-bg--email"></span>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--group-radio">
-          <legend class="form__legend">Ваше общее впечатление:</legend>
-          <ul class="form__list">
+          <legend class="form__legend form__legend--group-radio">Ваше общее впечатление:</legend>
+          <ul class="form__list form__list--group-radio">
             <li class="form__list-item form__list-item--radio">
               <input class="form__radio-input" type="radio" id="impression" name="impression"
                 value="Скорее положительное" checked>
               <label class="form__radio-label" for="impression">Скорее положительное</label>
             </li>
-            <li class="form__list-item form__list-item--radio">
+            <li class="form__list-item form__list-item--radio form__list-item--radio-indent">
               <input class="form__radio-input" type="radio" id="impression1" name="impression"
                 value="Скорее отрицательное">
               <label class="form__radio-label" for="impression1">Скорее отрицательное</label>
@@ -145,31 +145,31 @@
           </ul>
         </fieldset>
       </div>
-      <fieldset class="form__fieldset form__fieldset--border-top">
+      <fieldset class="form__fieldset form__fieldset--border-top form__fieldset--checkbox">
         <legend class="form__legend form__legend--checkbox">Посещенные достопримечательности:</legend>
         <ul class="form__list form__list--checkbox-position">
-          <li class="form__list-item">
+          <li class="form__list-item form__list-item--checkbox-indent">
             <input class="form__checkbox-input" type="checkbox" id="attractions" name="attractions" value="Мост дьявола"
               checked>
             <label class="form__checkbox-label" for="attractions">
-              Мост дьявола
+              Мост Дьявола
             </label>
           </li>
-          <li class="form__list-item">
+          <li class="form__list-item form__list-item--checkbox-indent">
             <input class="form__checkbox-input" type="checkbox" id="attractions1" name="attractions"
               value="Гора-Колокол" checked>
             <label class="form__checkbox-label" for="attractions1">
               Гора-Колокол
             </label>
           </li>
-          <li class="form__list-item">
+          <li class="form__list-item form__list-item--checkbox-indent">
             <input class="form__checkbox-input" type="checkbox" id="attractions2" name="attractions" value="Слайд-парк"
               checked>
             <label class="form__checkbox-label" for="attractions2">
               Слайд-парк
             </label>
           </li>
-          <li class="form__list-item">
+          <li class="form__list-item form__list-item--checkbox-indent">
             <input class="form__checkbox-input" type="checkbox" id="attractions3" name="attractions"
               value="Красные скалы">
             <label class="form__checkbox-label" for="attractions3">
@@ -178,8 +178,8 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset form__fieldset--border-top">
-        <legend class="form__legend" for="emotion">Опишите свои эмоции</legend>
+      <fieldset class="form__fieldset form__fieldset--textarea form__fieldset--border-top">
+        <legend class="form__legend form__legend--textarea" for="emotion">Опишите свои эмоции:</legend>
         <textarea class="form__textarea form__placeholder-color" name="emotion" id="emotion" cols="30" rows="10"
           placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
@@ -190,14 +190,15 @@
         </div>
       </div>
     </form>
+    <!--popup-->
     <div class="popup popup-error">
-      <h2 class="popup__title">Что-то пошло не так!</h2>
-      <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <h2 class="popup__title popup__title--error">Что-то пошло не так!</h2>
+      <p class="popup__text popup__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="popup__button popup__button--error" type="button">ОК</button>
     </div>
     <div class="popup popup-success">
-      <h2 class="popup__title">Ваш отзыв отправлен!</h2>
-      <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <h2 class="popup__title popup__title--success">Ваш отзыв отправлен!</h2>
+      <p class="popup__text popup__text--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       <div class="popup__bg">
       <button class="popup__button popup__button--success" type="button">Закрыть окно</button>
       </div>

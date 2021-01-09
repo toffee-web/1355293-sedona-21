@@ -13,6 +13,12 @@
   }
 }
 
+.page-header__form {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 185px;
+  }
+}
+
 .page-header__logo {
   width: 102px;
   height: 84px;
