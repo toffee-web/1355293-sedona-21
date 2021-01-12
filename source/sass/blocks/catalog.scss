@@ -1,12 +1,33 @@
+.catalog {
+  margin-bottom: 15px;
+  position: relative;
+
+  &--last-child {
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .catalog__name {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 39px;
+    width: 100%;
+    color: #ffffff;
   }
 }
 
@@ -14,21 +35,56 @@
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+  }
 }
 
-.catalog__like {
+.catalog__like-number {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.catalog__icon-like {
+  width: 23px;
+  height: 21px;
+  margin-right: 14px;
+  margin-top: 10px;
+  fill: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    fill: #ffffff;
+  }
 }
 
 .catalog__image {
   display: block;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .catalog__background {
@@ -36,5 +92,9 @@
     background-color: #f2f2f2;
     margin: 0;
     padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }

@@ -1,12 +1,17 @@
 .photo__list {
   list-style: none;
-  padding: 0 20px;
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
-    /*padding: 0 60px;*/
+    padding: 0 60px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 63px;
   }
 }
 
@@ -25,5 +30,35 @@
     @media (min-width: $desktop-width) {
       width: 100vw;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.photo__item {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  &:last-of-type {
+    border-bottom: 1px solid #e5e5e5;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+  }
+
+  &:not(:first-child) {
+    @media (min-width: $desktop-width) {
+      width: 33.33%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    padding: 0;
   }
 }

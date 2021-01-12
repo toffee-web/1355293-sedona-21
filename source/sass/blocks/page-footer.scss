@@ -10,6 +10,24 @@
   }
 }
 
+.page-footer__icon-twitter {
+  fill: #ffffff;
+  width: 18px;
+  height: 15px;
+}
+
+.page-footer__icon-facebook {
+  fill: #ffffff;
+  width: 9px;
+  height: 19px;
+}
+
+.page-footer__icon-youtube {
+  fill: #ffffff;
+  width: 20px;
+  height: 14px;
+}
+
 .page-footer__hashtag {
   padding-bottom: 12px;
 }
@@ -93,7 +111,7 @@
 
 .page-footer__copyright-img {
   fill: black;
-  width: auto;
+  width: 27px;
   height: 34px;
 
   &:hover {
