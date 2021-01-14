@@ -40,26 +40,17 @@
           </ul>
           <a class="page-header__logo">
             <picture>
-              <source media="(min-width: 1200px)"
-                srcset="img/logotype-desktop.svg.svg 1x, img/logotype-desktop.svg@2x.svg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/logotype-tablet.svg.svg 1x, img/logotype-tablet.svg@2x.svg 2x">
-              <img class="page-header__logo-img" src="img/logotype-mobile.svg.svg"
-                srcset="img/logotype-mobile.svg@2x.svg 2x" width="101" height="74" alt="Логотип">
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+              <img class="page-header__logo-img" src="img/logotype-mobile.svg" width="101" height="74" alt="Логотип">
             </picture>
           </a>
         </div>
       </nav>
 
       <div class="page-header__background">
-        <picture>
-          <source media="(min-width: 1200px)"
-            srcset="img/text-index-desktop.svg.svg 1x, img/text-index-desktop.svg@2x.svg 2x">
-          <source media="(min-width: 768px)"
-            srcset="img/text-index-tablet.svg.svg 1x, img/text-index-tablet.svg@2x.svg 2x">
-          <img class="page-header__img" src="img/text-index-mobile.svg.svg" srcset="img/text-index-mobile.svg@2x.svg 2x"
-            width="282" height="214" alt="Седона">
-        </picture>
+        <img class="page-header__img" src="img/text-index.png" srcset="img/text-index.@2x.png" width="282" height="214"
+          alt="Седона">
       </div>
     </header>
     <main class="page-main container">
@@ -77,8 +68,7 @@
                 <h3 class="advantage__title advantage__title--center">Настоящий городок</h3>
                 <p class="advantage__number"> №1 </p>
                 <p class="advantage__text advantage__text--indent-first">Седона не аттракцион для туристов, там течет
-                  своя
-                  жизнь</p>
+                  своя жизнь</p>
                 <picture>
                   <source media="(min-width: 1200px)"
                     srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
@@ -199,26 +189,8 @@
         </a>
       </div>
     </footer>
-
-
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function () {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
   </div>
+  <script src="js/menu.js"></script>
 </body>
-
 
 </html>

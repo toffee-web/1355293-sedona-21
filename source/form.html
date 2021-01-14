@@ -40,56 +40,20 @@
           </ul>
           <a class="page-header__logo">
             <picture>
-              <source media="(min-width: 1200px)"
-                srcset="img/logotype-desktop.svg.svg 1x, img/logotype-desktop.svg@2x.svg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/logotype-tablet.svg.svg 1x, img/logotype-tablet.svg@2x.svg 2x">
-              <img class="page-header__logo-img" src="img/logotype-mobile.svg.svg"
-                srcset="img/logotype-mobile.svg@2x.svg 2x" width="101" height="74" alt="Логотип">
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+              <img class="page-header__logo-img" src="img/logotype-mobile.svg" width="101" height="74" alt="Логотип">
             </picture>
           </a>
         </div>
       </nav>
-
-      <!--a class="page-header__logo" href="index.html">
-      <img src="https://via.placeholder.com/101x74" width="101" height="74" alt="Логотип">
-    </!--a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--active">
-          <a>
-            Главная
-          </a>
-        </li>
-        <li class="main-nav__item main-nav__item--active">
-          <a href="photo.html" class="main-nav__link">
-            Фото и видео
-          </a>
-        </li>
-        <li class="main-nav__item main-nav__item--active">
-          <a href="form.html" class="main-nav__link">
-            Форма отзыва
-          </a>
-        </li>
-        <li class="main-nav__item main-nav__item--active">
-          <a href="#" class="main-nav__link">
-            HTML Academy
-          </a>
-        </li>
-      </ul>
-      </div>
-    </nav-->
       <div class="page-header__background-small">
         <div class="page-header__img page-header__img--indent">
           <picture>
-            <source media="(min-width: 1200px)"
-              srcset="img/sedona-desktop.svg.svg 1x, img/sedona-desktop.svg@2x.svg 2x">
-            <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg 1x, img/sedona-tablet@2x.svg 2x">
-            <img class="page-header__img page-header__img--small" src="img/sedona-mobile.svg"
-              srcset="img/sedona-mobile@2x.svg 2x" width="229" height="39" alt="Седона">
+            <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg">
+            <img class="page-header__img page-header__img--small" src="img/sedona-mobile.svg" width="229" height="39"
+              alt="Седона">
           </picture>
         </div>
       </div>
@@ -264,24 +228,8 @@
         </a>
       </div>
     </footer>
-
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function () {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
   </div>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>
