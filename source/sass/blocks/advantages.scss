@@ -120,7 +120,7 @@
 
   &--area-three {
     @media (min-width: $tablet-width) {
-      grid-area: three;
+      /*grid-area: three;*/
       grid-column-start: 1;
       grid-column-end: 4;
     }
