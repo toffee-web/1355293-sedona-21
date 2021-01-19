@@ -22,7 +22,10 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer(),
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest("build/css"))
+    .pipe(postcss([
       csso()
     ]))
     .pipe(sourcemap.write("."))
@@ -140,6 +143,7 @@ const build = gulp.series (
   gulp.parallel (
     styles,
     html,
+    scripts,
     sprite,
     copy,
     images,
@@ -150,16 +154,7 @@ const build = gulp.series (
 exports.build = build;
 
 exports.default = gulp.series(
-  clean,
-  gulp.parallel(
-    styles,
-    html,
-    scripts,
-    sprite,
-    copy,
-    createWebp
-  ),
-  gulp.series(
+    build,
     server,
     watcher
-));
+);
