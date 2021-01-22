@@ -41,7 +41,7 @@
   padding-bottom: 5px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    padding-top: 5px;
 
     &:nth-child(3) {
       margin-left: auto;
@@ -160,7 +160,7 @@
   cursor: pointer;
   width: 23px;
   height: 22px;
-  left: 278px;
+  left: 265px;
   top: 17px;
   border: none;
   z-index: 10000;
@@ -174,7 +174,6 @@
   &:active {
     opacity: 0.3;
   }
-
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -239,6 +238,6 @@
   }
 }
 
-.main-nav--nojs .main-nav__toggle {
+/*.main-nav--nojs .main-nav__toggle {
   display: none;
-}
+}*/

@@ -1,12 +1,12 @@
 .advantage {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 135px;
+    margin-bottom: 55px;
   }
 }
 
@@ -47,20 +47,43 @@
   }
 
   &--first {
-    padding-top: 50px;
+    padding-top: 70px;
     margin-bottom: 18px;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: -4px;
+      left: 0;
+      height: 39px;
+      background-image: url("../../img/white.svg");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: 320px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &--second {
+    padding-top: 40px;
 
     @media (min-width: $tablet-width) {
       padding-top: 0;
     }
   }
 
-  &--second {
-    padding-top: 39px;
-
-    @media (min-width: $tablet-width) {
-      padding-top: 0;
-    }
+  &--third {
+    padding-top: 28px;
   }
 
   &--four {
@@ -88,7 +111,7 @@
         "text .";
       grid-template-rows: 92px 40px 124px;
       grid-template-columns: 1fr 2fr;
-      margin-bottom: 158px;
+      margin-bottom: 60px;
     }
 
     &--reverse-order {
@@ -132,7 +155,7 @@
       grid-column-start: 1;
       grid-column-end: 1;
       padding-top: 0;
-      padding-bottom: 63px;
+      padding-bottom: 52px;
     }
   }
 }
@@ -142,28 +165,35 @@
   padding-left: 69px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 36px;
+    padding-left: 0;
+    width: 33%;
   }
 
   &--housing {
     padding-bottom: 9px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 0;
+    }
   }
 
   &--housing::before {
     content: url("../../img/icon-house-mobile.svg");
     position: absolute;
     left: 21px;
-    top: 6px;
+    top: 7px;
     width: 39px;
     height: 37px;
 
     @media (min-width: $tablet-width) {
       content: url("../../img/icon-house-tablet.svg");
-      position: absolute;
-      left: 90px;
-      top: -99px;
+      /*position: absolute;
+      left: 45px;
+      top: -96px;
       width: 75px;
-      height: 72px;
+      height: 72px;*/
+      top: 0;
+      left: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -180,6 +210,10 @@
     @media (min-width: $tablet-width) {
       order: 1;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 0;
+    }
   }
 
   &--souvenirs::before {
@@ -192,11 +226,11 @@
 
     @media (min-width: $tablet-width) {
       content: url("../../img/icon-gift-tablet.svg");
-      position: absolute;
-      left: 90px;
-      top: -101px;
+      /*position: absolute;
+      left: 84px;
+      top: -99px;
       width: 64px;
-      height: 75px;
+      height: 75px;*/
     }
 
     @media (min-width: $desktop-width) {
@@ -211,22 +245,34 @@
     content: url("../../img/icon-burger-mobile.svg");
     position: absolute;
     left: 18px;
-    top: 11px;
+    top: 12px;
     width: 40px;
     height: 35px;
 
     @media (min-width: $tablet-width) {
       content: url("../../img/icon-burger-tablet.svg");
-      position: absolute;
-      left: 90px;
-      top: -95px;
+      /*position: absolute;
+      left: 65px;
+      top: -93px;
       width: 76px;
-      height: 68px;
+      height: 68px;*/
     }
 
     @media (min-width: $desktop-width) {
       left: 160px;
       top: -96px;
+      width: 75px;
+      height: 72px;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      display: block;
+      margin: 0 auto 25px;
+      position: relative;
+      top: 0;
+      left: 0;
       width: 75px;
       height: 72px;
     }
@@ -244,9 +290,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    padding-top: 40px;
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-top: 41px;
     font-size: 21px;
 
     &--pluse {
@@ -257,17 +301,45 @@
         padding-left: 0;
         padding-bottom: 10px;
       }
+
+      @media (min-width: $desktop-width) {
+        padding-bottom: 8px;
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
-    padding-right: 40px;
     padding-left: 0;
-    padding-bottom: 5px;
+  }
+
+  &--center {
+    text-align: center;
+    padding-bottom: 13px;
+    margin: 0;
+
+
+    @media (min-width: $tablet-width) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 42px;
+      padding-left: 125px;
+      padding-right: 125px;
+    }
+  }
+
+  &--center-title {
+    @media (min-width: $desktop-width) {
+      padding-top: 46px;
+    }
   }
 
   &--second {
+    padding-bottom: 0;
+
     @media (min-width: $tablet-width) {
       padding-right: 53px;
       padding-left: 53px;
@@ -277,19 +349,7 @@
     @media (min-width: $desktop-width) {
       padding-right: 125px;
       padding-left: 125px;
-      padding-top: 49px;
-    }
-  }
-
-  &--center {
-    text-align: center;
-    padding-bottom: 13px;
-    margin: 0;
-
-    @media (min-width: $desktop-width) {
-      padding-top: 45px;
-      padding-left: 125px;
-      padding-right: 125px;
+      padding-top: 50px;
     }
   }
 }
@@ -300,7 +360,7 @@
   line-height: 21px;
   text-align: center;
   grid-area: num;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
   margin: 0;
 
   &::before {
@@ -315,16 +375,43 @@
     padding-top: 13px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+  }
+
   &--second {
-    padding-top: 16px;
+    padding-top: 13px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 15px;
+    }
 
     @media (min-width: $desktop-width) {
-      padding-top: 23px;
+      padding-top: 24px;
     }
   }
 
-  @media (min-width: $desktop-width) {
-    padding-top: 19px;
+  &--third {
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+      padding-bottom: 22px;
+    }
+  }
+
+  &--four {
+    padding-bottom: 17px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+      padding-bottom: 22px;
+    }
+  }
+
+  &--five {
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+      padding-bottom: 22px;
+    }
   }
 }
 
@@ -339,13 +426,14 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 49px;
+    margin-bottom: 59px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 74px;
+    margin-bottom: 80px;
   }
 }
 
@@ -358,6 +446,45 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+  }
+
+  &--housing {
+    @media (min-width: $tablet-width) {
+      padding-right: 41px;
+      padding-left: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 61px;
+      padding-left: 63px;
+      margin-top: 16px;
+    }
+  }
+
+  &--meal {
+    @media (min-width: $tablet-width) {
+      padding: 0 51px;
+    }
+  }
+
+  &--souvenirs {
+    @media (min-width: $tablet-width) {
+      padding-left: 30px;
+      padding-right: 31px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 15px;
+      padding-right: 34px;
+    }
+  }
+}
+
+.advantage__transfer {
+  display: inline;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -382,7 +509,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 22px;
+      padding-top: 25px;
       padding-right: 55px;
       padding-left: 55px;
     }
@@ -400,9 +527,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 27px;
-      padding-right: 85px;
-      padding-left: 85px;
+      padding-top: 29px;
+      padding-right: 90px;
+      padding-left: 90px;
     }
   }
 
@@ -413,14 +540,21 @@
     padding-bottom: 11px;
   }
 
+  &--indent-third {
+    @media (min-width: $desktop-width) {
+      padding-left: 45px;
+      padding-right: 44px;
+    }
+  }
+
   &--indent-four {
     padding-right: 40px;
     padding-left: 40px;
     padding-top: 0;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 
     @media (min-width: $tablet-width) {
-      padding-right: 55px;
+      padding-right: 58px;
       padding-left: 55px;
     }
 
@@ -433,12 +567,12 @@
   &--indent-five {
     padding-right: 36px;
     padding-left: 36px;
-    padding-bottom: 22px;
-  }
+    padding-bottom: 25px;
 
-  @media (min-width: $tablet-width) {
-    padding-right: 45px;
-    padding-left: 45px;
+    @media (min-width: $tablet-width) {
+      padding-right: 55px;
+      padding-left: 55px;
+    }
   }
 }
 

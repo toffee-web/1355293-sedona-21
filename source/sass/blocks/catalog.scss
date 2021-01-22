@@ -20,12 +20,12 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding-top: 22px;
+    padding-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    bottom: 39px;
+    bottom: 56px;
     width: 100%;
     color: #ffffff;
   }
@@ -38,12 +38,12 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 15px;
+    padding-bottom: 17px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    bottom: 0;
+    bottom: 14px;
     width: 100%;
     color: #ffffff;
   }
@@ -57,32 +57,46 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 20px;
-    right: 30px;
+  }
+
+  &--big {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      bottom: 26px;
+      right: 20px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
+    position: absolute;
+    bottom: 42px;
+    right: 31px;
+    fill: #ffffff;
   }
 }
 
 .catalog__icon-like {
   width: 23px;
   height: 21px;
-  margin-right: 14px;
-  margin-top: 10px;
+  margin-right: 11px;
+  margin-top: 11px;
   fill: #000000;
-  /*opacity: 0.3;*/
+
+  &:first-of-type {
+    @media (min-width: $tablet-width) {
+      margin-right: 5px;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     fill: #ffffff;
-    /*opacity: 1;*/
   }
 }
 
 .catalog__image {
   display: block;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
