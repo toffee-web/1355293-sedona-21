@@ -1,15 +1,17 @@
 .video {
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 119px;
 
   @media (min-width: $tablet-width) {
     margin-right: 60px;
     margin-left: 60px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 201px;
     margin-left: 199px;
+    margin-bottom: 109px;
   }
 }
 
@@ -33,6 +35,13 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-bottom: 33px;
+  }
 }
 
 .video__text {
@@ -42,12 +51,21 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 31px;
+  padding-left: 33px;
+  padding-bottom: 34px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     padding-right: 100px;
     padding-left: 100px;
+    padding-bottom: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 176px;
+    padding-left: 178px;
+    padding-bottom: 77px;
   }
 }
 
@@ -56,7 +74,7 @@
   height: 45px;
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
-  bottom: 70px;
+  bottom: 4px;
   transform: translateX(-50%);
   left: 50%;
 
@@ -69,43 +87,53 @@
 
 .video__control-button {
   background: #f2f2f2;
-  width: 100%;
+  width: 280px;
   height: 66px;
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
   box-sizing: border-box;
   align-items: center;
+  position: absolute;
+  bottom: -62px;
+  left: 20px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 10px;
+    bottom: 17px;
     background: none;
+    padding-left: 14px;
   }
 }
 
 .video__replay {
   background-image: url("../../img/replay-mobile.svg");
+  background-repeat: no-repeat;
   background-color: none;
   width: 16px;
   height: 20px;
   border: none;
   outline: none;
-  margin-right: 90px;
+  margin-right: 103px;
+  margin-left: 5px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 480px;
+    margin-right: 458px;
     background-image: url("../../img/replay.svg");
     background-color: rgba(0, 0, 0, 0);
+    padding-right: 14px;
+    margin-left: 0;
+    padding-left: 17px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 600px;
+    margin-right: 610px;
   }
 }
 
 .video__subtitles {
   background-image: url("../../img/subtitles-mobile.svg");
+  background-repeat: no-repeat;
   background-color: none;
   width: 32px;
   height: 20px;
@@ -115,20 +143,24 @@
   @media (min-width: $tablet-width) {
     background-image: url("../../img/subtitles.svg");
     background-color: rgba(0, 0, 0, 0);
+    padding-right: 57px;
   }
 }
 
 .video__fullscreen {
   background-image: url("../../img/fullscreen-mobile.svg");
+  background-repeat: no-repeat;
   background-color: none;
   width: 20px;
   height: 20px;
   border: none;
   outline: none;
+  margin-right: 3px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/fullscreen.svg");
     background-color: rgba(0, 0, 0, 0);
+    padding-right: 16px;
   }
 }
 
@@ -143,8 +175,10 @@
     width: 389px;
     top: 25px;
     transform: translateX(0%);
-    left: 88px;
+    left: 92px;
     position: absolute;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -152,45 +186,37 @@
   }
 }
 
-.video__range {
-  /*-webkit-appearance: none;*/
-  width: 100%;
-}
-
-.video__range::-webkit-slider-thumb {
-  /*-webkit-appearance: none;*/
-  width: 13px;
-  height: 13px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
-  top: -5px;
-  position: relative;
-}
-
-.video__range:focus {
-  outline: none;
-}
-
-.video__range::-ms-track {
-  width: 100%;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
-
-.video__range::-webkit-slider-runnable-track {
+.video__volume-scale {
+  background: rgba(255, 255, 255, 0.2);
   width: 235px;
   height: 3px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
+  top: 22px;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
 
   @media (min-width: $tablet-width) {
     width: 389px;
+    top: 45px;
+    transform: translateX(0%);
+    left: 93px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 540px;
+    width: 541px;
+  }
+}
+
+.video__volume-bar {
+  width: 9px;
+  height: 9px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -3px;
+  left: 37px;
+
+  @media (min-width: $tablet-width) {
+    left: 112px;
   }
 }

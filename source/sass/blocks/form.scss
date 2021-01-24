@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,24 +45,34 @@
   }
 
   &--group-name {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
+    padding-right: 17px;
+    padding-bottom: 6px;
 
     @media (min-width: $tablet-width) {
       order: 1;
-      margin-bottom: 45px;
+      margin-bottom: 40px;
+      width: 50%;
+      flex-direction: column;
+      box-sizing: border-box;
     }
 
     @media (min-width: $desktop-width) {
       width: 50%;
+      padding-right: 12px;
+      margin-bottom: 38px;
     }
   }
 
   &--group-input {
-    margin-bottom: 23px;
+    margin-bottom: 20px;
 
     @media (min-width: $tablet-width) {
       order: 2;
       flex-grow: 1;
+      margin-left: 60px;
+      margin-right: 60px;
+      margin-bottom: 22px;
     }
 
     @media (min-width: $desktop-width) {
@@ -69,7 +80,7 @@
       padding-left: 0;
       margin-left: 120px;
       margin-right: 120px;
-      margin-bottom: 11px;
+      margin-bottom: 5px;
     }
   }
 
@@ -85,7 +96,7 @@
         width: 1px;
         height: 292px;
         position: absolute;
-        left: 350px;
+        left: 371px;
         top: 0;
       }
     }
@@ -106,18 +117,38 @@
   }
 
   &--checkbox {
-    margin-bottom: 15px;
+    margin-bottom: 19px;
+    padding-left: 8px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 60px;
+      margin-left: 60px;
+      margin-bottom: 11px;
+    }
 
     @media (min-width: $desktop-width) {
       padding-right: 0;
       padding-left: 0;
+      margin-right: 120px;
+      margin-left: 120px;
     }
   }
 
   &--textarea {
+    padding-right: 19px;
+    padding-left: 16px;
+    padding-bottom: 13px;
+
     @media (min-width: $tablet-width) {
       margin-right: 60px;
       margin-left: 60px;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 120px;
+      margin-left: 120px;
     }
   }
 }
@@ -132,18 +163,23 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    position: relative;
   }
 
   &--checkbox {
+    padding-right: 8px;
+    padding-left: 11px;
+
     @media (min-width: $tablet-width) {
-      width: 50%;
-      padding-right: 20px;
-      padding-left: 20px;
+      width: 63%;
+      padding-right: 34px;
+      padding-left: 26px;
     }
 
     @media (min-width: $desktop-width) {
-      padding-right: 40px;
-      padding-left: 40px;
+      width: 43%;
+      padding-right: 70px;
+      padding-left: 70px;
     }
   }
 
@@ -151,26 +187,29 @@
     text-align: center;
 
     @media (min-width: $tablet-width) {
-      padding-left: 19px;
-      padding-bottom: 38px;
+      padding-left: 35px;
+      padding-bottom: 37px;
     }
 
     @media (min-width: $desktop-width) {
       padding-left: 0;
       margin-left: 90px;
+      padding-bottom: 40px;
     }
   }
 
   &--name {
+    padding-left: 8px;
+
     @media (min-width: $tablet-width) {
       text-align: left;
-      padding-left: 29px;
+      padding-left: 59px;
       padding-bottom: 35px;
     }
 
     @media (min-width: $desktop-width) {
       padding-left: 0;
-      margin-left: 120px;
+      margin-left: 122px;
     }
   }
 
@@ -178,18 +217,45 @@
     @media (min-width: $tablet-width) {
       padding-left: 65px;
       padding-right: 65px;
-      padding-bottom: 3px;
+      padding-bottom: 4px;
+      padding-top: 6px;
     }
   }
 
   &--textarea {
     padding-bottom: 10px;
+    padding-left: 7px;
 
     @media (min-width: $tablet-width) {
       padding-left: 75px;
       padding-right: 75px;
+      padding-top: 16px;
     }
   }
+
+  /*&--line::before {
+    content: "";
+    display: block;
+    width: 31%;
+    height: 1px;
+    background-color: #000000;
+    /*transform: translateY(-53%);
+    top: 25%;
+    left: -124px;
+    position: absolute;
+  }
+
+  &--line::after {
+    content: "";
+    display: block;
+    width: 31%;
+    height: 1px;
+    background-color: #000000;
+    /*transform: translateY(-53%);
+    top: 25%;
+    left: 399px;
+    position: absolute;
+  }*/
 }
 
 .form__list {
@@ -197,30 +263,41 @@
   list-style: none;
 
   &--checkbox-position {
+    margin-top: 14px;
+    margin-bottom: 11px;
+
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       justify-content: space-around;
-      padding-left: 160px;
-      padding-right: 124px;
-      margin-top: 45px;
+      padding-left: 87px;
+      padding-right: 60px;
+      margin-top: 39px;
+      column-gap: 25px;
+      row-gap: 9px;
+      margin-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       padding-left: 0;
       padding-right: 0;
-      margin-top: 42px;
-      column-gap: 52px;
+      margin-top: 38px;
+      column-gap: 50px;
+      row-gap: 0;
+      margin-left: 2px;
     }
   }
 
   &--contact {
-    margin-top: 5px;
+    margin-top: 6px;
+    padding-left: 4px;
+    margin-right: 5px;
+    margin-bottom: 17px;
 
     @media (min-width: $tablet-width) {
-      padding-right: 60px;
-      padding-left: 60px;
+      /*padding-right: 60px;*/
+      padding-left: 0;
       margin-bottom: 4px;
     }
 
@@ -231,19 +308,37 @@
       align-items: stretch;
       /*justify-content: space-between;*/
       /*margin-bottom: 50px;*/
-      margin-top: 50px;
+      margin-top: 52px;
+      margin-right: 0;
     }
   }
 
   &--group-radio {
+    margin-top: 19px;
+    margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 17px;
+      padding-left: 14px;
+    }
+
     @media (min-width: $desktop-width) {
-      margin-left: 39px;
+      margin-left: 38px;
+      margin-top: 14px;
+      padding-left: 0;
     }
   }
 
   &--name {
+    margin-top: 13px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 29px;
+      margin-left: 53px;
+    }
+
     @media (min-width: $desktop-width) {
-      margin-left: 90px;
+      margin-left: 91px;
       margin-right: 55px;
     }
   }
@@ -255,7 +350,7 @@
   &--input {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 
     @media (min-width: $desktop-width) {
       &:not(:first-of-type) {
@@ -297,15 +392,39 @@
       margin-top: 22px;
       margin-bottom: 25px;
     }
+
+    &:nth-child(2) {
+      @media (min-width: $tablet-width) {
+        margin-bottom: 24px;
+        margin-top: 24px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-bottom: 24px;
+        margin-top: 24px;
+      }
+    }
   }
 
   &--checkbox-indent {
     &:not(:last-of-type) {
-      padding-bottom: 30px;
+      padding-bottom: 20px;
     }
 
     @media (min-width: $tablet-width) {
-      padding-bottom: 0;
+      padding-bottom: 27px;
+    }
+
+    &:nth-child(2) {
+      @media (min-width: $desktop-width) {
+        padding-left: 8px;
+      }
+    }
+
+    &:nth-child(3) {
+      @media (min-width: $desktop-width) {
+        padding-left: 12px;
+      }
     }
   }
 }
@@ -318,9 +437,9 @@
   text-transform: uppercase;
 
   &--name {
-    padding-top: 11px;
+    padding-top: 14px;
     padding-left: 7px;
-    padding-right: 10px;
+    padding-right: 14px;
 
     @media (min-width: $desktop-width) {
       padding-right: 15px;
@@ -328,23 +447,24 @@
   }
 
   &--surname {
-    padding-top: 10px;
+    padding-top: 12px;
     padding-left: 7px;
-    padding-right: 10px;
+    padding-right: 13px;
 
     @media (min-width: $tablet-width) {
-      padding-left: 30px;
+      padding-left: 7px;
     }
 
     @media (min-width: $desktop-width) {
       padding-right: 15px;
+      padding-left: 32px;
     }
   }
 
   &--middlename {
-    padding-top: 20px;
+    padding-top: 19px;
     padding-left: 7px;
-    padding-right: 10px;
+    padding-right: 15px;
 
     @media (min-width: $desktop-width) {
       padding-right: 15px;
@@ -352,7 +472,7 @@
   }
 
   &--contact {
-    padding-left: 27px;
+    padding-left: 24px;
 
     @media (min-width: $tablet-width) {
       padding-left: 22px;
@@ -360,12 +480,13 @@
 
     @media (min-width: $desktop-width) {
       padding-left: 0;
+      padding-top: 25px;
     }
   }
 
   &--phone {
     @media (min-width: $desktop-width) {
-      padding-top: 25px;
+
       padding-right: 20px;
     }
   }
@@ -373,7 +494,7 @@
   &--email {
     @media (min-width: $desktop-width) {
       /*width: 100%;*/
-      padding-top: 25px;
+      /*padding-top: 25px;*/
       padding-right: 20px;
     }
   }
@@ -412,23 +533,27 @@
   }
 
   &--name {
-    padding-top: 16px;
-    padding-left: 25px;
+    padding-top: 19px;
+    padding-left: 23px;
   }
 
   &--surname {
-    padding-top: 15px;
-    padding-left: 25px;
+    padding-top: 17px;
+    padding-left: 23px;
+
+    @media (min-width: $desktop-width) {
+      padding-left: 21px;
+    }
   }
 
   &--middlename {
-    padding-top: 18px;
-    padding-left: 26px;
+    padding-top: 20px;
+    padding-left: 23px;
   }
 
   &--phone {
     margin-top: 10px;
-    padding-left: 27px;
+    padding-left: 24px;
     margin-bottom: 7px;
 
     @media (min-width: $tablet-width) {
@@ -438,41 +563,45 @@
 
     @media (min-width: $desktop-width) {
       width: 257px;
+      padding-top: 19px;
+      padding-left: 19px;
     }
   }
 
   &--email {
     margin-top: 7px;
-    margin-left: 5px;
+    /*margin-left: 5px;*/
+    padding-left: 24px;
 
     @media (min-width: $tablet-width) {
-      padding-left: 17px;
+      padding-left: 22px;
       margin-bottom: 0;
       margin-left: 0;
     }
 
     @media (min-width: $desktop-width) {
-      width: 257px;
+      width: 259px;
       height: 58px;
+      margin-top: 11px;
     }
   }
 }
 
 .form__icon-bg {
   background-color: #e6e6e6;
-  width: 58px;
+  width: 57px;
   height: 58px;
   position: absolute;
-  right: 5px;
-  top: 40px;
+  right: 0;
+  top: 41px;
 
   @media (min-width: $tablet-width) {
-    right: 0;
+    right: -5px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 10px;
-    right: -54px;
+    top: 11px;
+    right: -56px;
   }
 
   &--phone {
@@ -485,10 +614,11 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12' fill='none'%3E%3Cpath d='M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z' fill='black'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    top: 38px;
 
     @media (min-width: $desktop-width) {
-      top: 13px;
-      right: -40px;
+      top: 11px;
+      right: -57px;
     }
   }
 }
@@ -512,16 +642,16 @@
   resize: none;
   height: 160px;
   outline: none;
-  padding-top: 13px;
-  padding-left: 25px;
+  padding-top: 14px;
+  padding-left: 22px;
   padding-right: 23px;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-top: 40px;
-    padding-right: 22px;
-    padding-top: 18px;
-    margin-bottom: 45px;
+    padding-right: 21px;
+    padding-top: 17px;
+    margin-bottom: 40px;
   }
 }
 
@@ -550,6 +680,8 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
+    padding-right: 22px;
+    padding-left: 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -567,7 +699,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 85px;
+    margin-bottom: 89px;
     margin-left: 60px;
     margin-right: 60px;
   }
@@ -575,6 +707,7 @@
   @media (min-width: $desktop-width) {
     padding-right: 60px;
     padding-left: 60px;
+    margin-bottom: 94px;
   }
 }
 
@@ -636,15 +769,15 @@
   display: inline-block;
   flex-shrink: 0;
   flex-grow: 0;
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   background-color: #f2f2f2;
   border-radius: 10%;
-  margin-right: 30px;
+  margin-right: 23px;
   margin-left: 10px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 30px;
+    margin-right: 24px;
     margin-left: 0;
   }
 }
