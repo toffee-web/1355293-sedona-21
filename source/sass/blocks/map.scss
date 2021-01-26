@@ -5,8 +5,29 @@
 
 .map {
   margin-bottom: 14px;
+  position: relative;
+  background-image: url("../img/map-mobile.jpg");
+  height: 350px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
+    background-image: url("../img/map-tablet.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+    background-image: url("../img/map-desktop.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
   }
 }

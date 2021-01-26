@@ -1,22 +1,23 @@
 .video {
   position: relative;
-  margin-bottom: 119px;
+  margin-bottom: 57px;
 
   @media (min-width: $tablet-width) {
     margin-right: 60px;
     margin-left: 60px;
-    margin-bottom: 64px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 201px;
     margin-left: 199px;
-    margin-bottom: 109px;
+    margin-bottom: 113px;
   }
 }
 
 .video__image {
   width: 100vw;
+  display: block;
 
   @media (min-width: $tablet-width) {
     width: 648px;
@@ -59,7 +60,7 @@
   @media (min-width: $tablet-width) {
     padding-right: 100px;
     padding-left: 100px;
-    padding-bottom: 78px;
+    padding-bottom: 79px;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,14 +75,14 @@
   height: 45px;
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
-  bottom: 4px;
+  bottom: 66px;
   transform: translateX(-50%);
   left: 50%;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     height: 93px;
-    bottom: 4px;
+    bottom: 0;
   }
 }
 
@@ -92,22 +93,30 @@
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
   align-items: center;
-  position: absolute;
+  /*position: absolute;
   bottom: -62px;
-  left: 20px;
+  left: 20px;*/
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 17px;
+    /*position: absolute;
+    bottom: 17px;*/
     background: none;
-    padding-left: 14px;
+    padding-left: 34px;
+  }
+
+  &--location {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      bottom: 13px;
+    }
   }
 }
 
 .video__replay {
-  background-image: url("../../img/replay-mobile.svg");
+  background-image: url("../img/replay-mobile.svg");
   background-repeat: no-repeat;
   background-color: none;
   width: 16px;
@@ -119,7 +128,7 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 458px;
-    background-image: url("../../img/replay.svg");
+    background-image: url("../img/replay.svg");
     background-color: rgba(0, 0, 0, 0);
     padding-right: 14px;
     margin-left: 0;
@@ -132,7 +141,7 @@
 }
 
 .video__subtitles {
-  background-image: url("../../img/subtitles-mobile.svg");
+  background-image: url("../img/subtitles-mobile.svg");
   background-repeat: no-repeat;
   background-color: none;
   width: 32px;
@@ -141,14 +150,14 @@
   outline: none;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/subtitles.svg");
+    background-image: url("../img/subtitles.svg");
     background-color: rgba(0, 0, 0, 0);
     padding-right: 57px;
   }
 }
 
 .video__fullscreen {
-  background-image: url("../../img/fullscreen-mobile.svg");
+  background-image: url("../img/fullscreen-mobile.svg");
   background-repeat: no-repeat;
   background-color: none;
   width: 20px;
@@ -158,7 +167,7 @@
   margin-right: 3px;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/fullscreen.svg");
+    background-image: url("../img/fullscreen.svg");
     background-color: rgba(0, 0, 0, 0);
     padding-right: 16px;
   }

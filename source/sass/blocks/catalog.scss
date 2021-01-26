@@ -11,6 +11,32 @@
   }
 }
 
+.catalog__image {
+  display: block;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 267px;
+    padding-bottom: 0;
+  }
+
+  &--big {
+    @media (min-width: $tablet-width) {
+      width: 648px;
+      height: 400px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100vw;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
 .catalog__name {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
@@ -59,29 +85,35 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
+    /*position: absolute;
     bottom: 27px;
-    right: 30px;
+    right: 30px;*/
+    margin-top: 26px;
+    margin-right: 28px;
   }
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
-    position: absolute;
+    /*position: absolute;
     bottom: 28px;
-    right: 29px;
+    right: 29px;*/
     fill: #ffffff;
+    margin-right: 29px;
   }
 
   &--big {
     @media (min-width: $tablet-width) {
-      position: absolute;
+      /*position: absolute;
       bottom: 27px;
-      right: 21px;
+      right: 21px;*/
+      margin-top: 26px;
+      margin-right: 19px;
     }
 
     @media (min-width: $desktop-width) {
-      bottom: 27px;
-      right: 22px;
+      /*bottom: 27px;
+      right: 22px;*/
+      margin-right: 21px;
     }
   }
 }
@@ -95,37 +127,30 @@
   opacity: 0.3;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
+    /*position: absolute;
     right: 20px;
-    bottom: 5px;
+    bottom: 5px;*/
+    margin-top: 0;
+    margin-right: 7px;
   }
 
   @media (min-width: $desktop-width) {
     fill: #ffffff;
     opacity: 1;
-    position: absolute;
+    /*position: absolute;
     right: 34px;
     margin-top: 0;
     margin-right: -1px;
-    bottom: 4px;
+    bottom: 4px;*/
   }
 
   &--big {
     margin-right: 10px;
 
     @media (min-width: $tablet-width) {
-      right: 34px;
+      /*right: 34px;*/
       margin-right: 6px;
     }
-  }
-}
-
-.catalog__image {
-  display: block;
-  padding-bottom: 10px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 0;
   }
 }
 
@@ -137,6 +162,7 @@
     background-color: #f2f2f2;
     margin: 0;
     padding-left: 20px;
+    grid-template-columns: 1fr max-content;
     /*padding-top: 15px;*/
   }
 
@@ -149,4 +175,8 @@
     width: 100%;
     bottom: 0;
   }
+}
+
+.catalog__info {
+  display: grid;
 }
