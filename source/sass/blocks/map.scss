@@ -4,7 +4,7 @@
 }
 
 .map {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
   position: relative;
   background-image: url("../img/map-mobile.jpg");
   height: 350px;
@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     background-image: url("../img/map-tablet.jpg");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -23,7 +23,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 24px;
+    margin-bottom: 29px;
     background-image: url("../img/map-desktop.jpg");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
