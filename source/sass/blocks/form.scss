@@ -42,17 +42,6 @@
       margin-right: 0;
       padding-right: 60px;
       box-sizing: border-box;
-      position: relative;
-
-      &::before {
-        content: "";
-        background-color: #dbdbdb;
-        width: 1px;
-        height: 292px;
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
     }
 
     @media (min-width: $desktop-width) {
@@ -90,29 +79,19 @@
       margin-left: 0;
       margin-right: 0;
 
-      /*&::after {
+      &::after {
         content: "";
         background-color: #dbdbdb;
         width: 1px;
         height: 292px;
         position: absolute;
         right: 0;
-        top: 0;
-      }*/
+        bottom: 66px;
+      }
     }
 
     @media (min-width: $desktop-width) {
       padding-left: 120px;
-
-      /*&::after {
-        content: "";
-        background-color: #dbdbdb;
-        width: 1px;
-        height: 292px;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }*/
     }
   }
 

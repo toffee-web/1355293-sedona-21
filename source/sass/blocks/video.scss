@@ -93,16 +93,10 @@
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
-  /*box-sizing: border-box;*/
   align-items: center;
-  /*position: absolute;
-  bottom: -62px;
-  left: 20px;*/
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    /*position: absolute;
-    bottom: 17px;*/
     background: none;
     padding-left: 34px;
   }
